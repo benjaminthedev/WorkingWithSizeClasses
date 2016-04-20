@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkingWithSizeClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nP-EK-fTB">
+                                <rect key="frame" x="250" y="200" width="100" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="iNa-IW-R78">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="rPH-wJ-jp4">
+                                        <variation key="heightClass=compact" constant="200"/>
+                                        <variation key="widthClass=compact" constant="50"/>
+                                        <variation key="widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="iNa-IW-R78"/>
+                                        <exclude reference="rPH-wJ-jp4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-DS-frk">
+                                <rect key="frame" x="250" y="28" width="100" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycz-qF-9aj">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="2Y5-rE-TY5"/>
+                                            <constraint firstAttribute="height" constant="100" id="NBZ-de-edB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-4f-vTc">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7SL-4f-vTc" firstAttribute="width" secondItem="ycz-qF-9aj" secondAttribute="width" id="e4L-i1-ikt"/>
+                                    <constraint firstItem="7SL-4f-vTc" firstAttribute="height" secondItem="ycz-qF-9aj" secondAttribute="height" id="sfo-AL-mvD"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="urW-Yq-O6u">
+                                <rect key="frame" x="250" y="492" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Rmx-Ek-8FG"/>
+                                    <constraint firstAttribute="width" constant="100" id="u1A-ma-hLp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To err is human; to forgive, divine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3Q-o5-gLH">
+                                <rect key="frame" x="64" y="402" width="473" height="82"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7nP-EK-fTB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3kG-fQ-AsD"/>
+                            <constraint firstItem="A3Q-o5-gLH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7LC-HV-pqa"/>
+                            <constraint firstItem="urW-Yq-O6u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9jU-cs-327"/>
+                            <constraint firstItem="7nP-EK-fTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwt-Xz-nWL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nP-EK-fTB" secondAttribute="bottom" constant="8" symbolic="YES" id="khJ-ml-CaE"/>
+                            <constraint firstItem="ShJ-DS-frk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDP-oI-Ujt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="urW-Yq-O6u" secondAttribute="bottom" constant="8" symbolic="YES" id="sjn-u0-RqO"/>
+                            <constraint firstItem="ShJ-DS-frk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tvC-iJ-Pnj"/>
+                            <constraint firstItem="urW-Yq-O6u" firstAttribute="top" secondItem="A3Q-o5-gLH" secondAttribute="bottom" constant="8" id="w9m-Cf-7P4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="khJ-ml-CaE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="7nP-EK-fTB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3kG-fQ-AsD"/>
+                                <exclude reference="dwt-Xz-nWL"/>
+                                <exclude reference="khJ-ml-CaE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="100" height="100"/>
+    </resources>
+</document>
